@@ -1,3 +1,4 @@
+import DefaultLayout from "@/layouts/default";
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
@@ -14,5 +15,8 @@ export const routes: RouteObject[] = [
     ),
   },
   { path: "/login", element: <Login /> },
-  { path: "/about", element: <About /> },
+  {
+    element: <DefaultLayout />,
+    children: [{ path: "/about", element: <About /> }],
+  },
 ];
