@@ -1,13 +1,13 @@
-import { Layout } from "antd";
-import { useEffect } from "react";
-import { Outlet } from "react-router-dom";
-import styles from "./styles.module.scss";
+import { Layout } from 'antd';
+import { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
+import styles from './styles.module.scss';
 
 const { Content } = Layout;
 
 const DefaultLayout = () => {
   useEffect(() => {
-    console.log("render layout");
+    console.log('render layout');
   }, []);
 
   return (

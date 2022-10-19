@@ -1,4 +1,4 @@
-import App from "./App";
-import { bootstrap } from "./bootstrap";
+import App from './App';
+import { bootstrap } from './bootstrap';
 
-bootstrap(<App />, "root");
+bootstrap(<App />, 'root');
